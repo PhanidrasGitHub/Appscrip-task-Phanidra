@@ -1,0 +1,45 @@
+.header {
+  padding: 20px,0px;
+  text-align: center;
+}
+.mb_header{
+  display: none;
+}
+.mainTitle {
+  font-size: 40px;
+  font-weight: 400; 
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.description {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #000;
+}
+
+@media (max-width: 768px) {
+  .mainTitle {
+    font-size: 32px;
+  }
+  .mb_header{
+    text-align: left;
+    display: flex;
+    padding: 10px;
+
+  }
+  .home{
+    color:rgb(155, 153, 151);
+    margin-right: 10px;
+  }
+  .shop{
+    margin-left: 10px;
+  }
+  .description {
+    font-size: 14px;
+    padding: 0 20px;
+  }
+}

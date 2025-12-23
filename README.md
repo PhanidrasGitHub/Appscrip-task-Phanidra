@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Product Listing Page (PLP) - Appscrip Task
+A fully functional, responsive Product Listing Page built with Next.js using the App Router. This project replicates the provided Figma design while adhering to high standards of SEO, performance, and clean code.
 
-## Getting Started
+🚀 Live Demo
+Netlify URL: [Your Netlify Link Here]
 
-First, run the development server:
+🛠️ Technical Stack & Implementation
+To fulfill the requirement of "minimal dependencies" and "pure CSS", this project uses:
 
-```bash
+Framework: Next.js 14+ (React)
+
+Styling: Pure CSS via CSS Modules (No Bootstrap, No Tailwind)
+
+Data Fetching: Server-Side Rendering (SSR) for optimal SEO and performance
+
+Mock API: Integrated with Fake Store API for dynamic content
+
+✨ Features & Requirements Met
+1. Responsive Design
+Desktop: 4-column product grid with a collapsible filter sidebar.
+
+Tablet: 2-column grid to maintain readability.
+
+Mobile: 2-column grid as per the specific mobile UI design provided.
+
+Sticky Navbar: Fixed at the top for easy access during scrolling.
+
+2. SEO Optimization
+Semantic HTML: Used tags like <header>, <main>, <section>, and <footer>.
+
+Heading Hierarchy: Proper use of <h1> for the page title and <h2> for products.
+
+Metadata: Defined descriptive titles and meta-descriptions.
+
+Schema.org: Injected JSON-LD ItemList schema for better search engine indexing.
+
+Images: All images include descriptive alt text for accessibility and SEO.
+
+3. Clean Code & Performance
+CSS Modules: Locally scoped styles to prevent conflicts and ensure a modular structure.
+
+Minimal DOM: Avoided unnecessary nesting to keep the DOM size minimal.
+
+Z-Index Management: Correctly handled the sticky header and card shadows to prevent overlapping issues.
+
+💻 How to Run Locally
+Clone the repository:
+
+Bash
+
+git clone https://github.com/yourusername/appscrip-task-phani.git
+Navigate to the directory:
+
+Bash
+
+cd appscrip-task-phani
+Install dependencies:
+
+Bash
+
+npm install
+Run the development server:
+
+Bash
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+View in browser: Open http://localhost:3000
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+📁 Project Structure
+/src/app: Contains the main layout and page logic (SSR).
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+/src/components: Reusable UI components (Navbar, Header, ProductCard, FilterSidebar, Footer).
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+/public: Static assets like the Logo and Favicons.

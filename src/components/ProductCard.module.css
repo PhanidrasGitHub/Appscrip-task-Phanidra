@@ -1,0 +1,100 @@
+/* Container for the entire product card */
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  position: relative;
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  cursor: pointer;
+  padding: 10px;
+  /* Requirement: Add a subtle shadow for depth */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Hover effect: Elevates card and deepens shadow for interactivity */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* Image container matches the tall vertical look in Figma */
+.imageContainer {
+  background-color: #f7f7f7;
+  aspect-ratio: 3 / 4; /* Ensures a consistent vertical rectangular shape */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+
+.image {
+  max-width: 85%;
+  max-height: 85%;
+  object-fit: contain; /* Prevents image distortion */
+}
+
+/* Text details section */
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.titleRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+/* Matches the bold, uppercase titles from the desktop design */
+.productTitle {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000;
+  line-height: 1.4;
+  margin: 0;
+  /* Truncate long titles to keep grid neat */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex: 1;
+}
+
+/* Wishlist Button styling */
+.wishlistBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  transition: color 0.2s ease;
+}
+
+/* Custom pricing text as per Figma requirement */
+.pricingText {
+  font-size: 12px;
+  color: #888888;
+  margin: 0;
+}
+
+.signInLink {
+  text-decoration: underline;
+  color: #000;
+  font-weight: 400;
+}
+
+/* Tablet & Mobile Responsiveness */
+@media (max-width: 768px) {
+  .productTitle {
+    font-size: 12px;
+  }
+  
+  .card {
+    padding: 8px; /* Slightly tighter padding for mobile */
+  }
+}

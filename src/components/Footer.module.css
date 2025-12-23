@@ -1,0 +1,84 @@
+.footer {
+  background: #000;
+  color: #fff;
+  padding: 80px 0 40px;
+}
+
+.footerTop {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #333;
+  padding-bottom: 40px;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.heading {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.text {
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+.subscribeBox {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.input {
+  padding: 12px;
+  width: 300px;
+  background: #fff;
+  border: none;
+}
+
+.subBtn {
+  padding: 12px 30px;
+  background: none;
+  border: 1px solid #555;
+  color: #555;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.footerBottom {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  padding-top: 50px;
+}
+
+.list {
+  list-style: none;
+}
+
+.list li {
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.payments {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.payIcon {
+  border: 1px solid #333;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  .footerBottom { grid-template-columns: 1fr; }
+  .input { width: 100%; }
+}
