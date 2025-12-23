@@ -1,13 +1,13 @@
 Product Listing Page (PLP) - Appscrip Task
 A fully functional, responsive Product Listing Page built with Next.js using the App Router. This project replicates the provided Figma design while adhering to high standards of SEO, performance, and clean code.
 
-🚀 Live Demo
+# Live Demo
 Netlify URL: [Your Netlify Link Here]
 
-🛠️ Technical Stack & Implementation
+Technical Stack & Implementation
 To fulfill the requirement of "minimal dependencies" and "pure CSS", this project uses:
 
-Framework: Next.js 14+ (React)
+# Framework: Next.js 14+ (React)
 
 Styling: Pure CSS via CSS Modules (No Bootstrap, No Tailwind)
 
@@ -15,7 +15,7 @@ Data Fetching: Server-Side Rendering (SSR) for optimal SEO and performance
 
 Mock API: Integrated with Fake Store API for dynamic content
 
-✨ Features & Requirements Met
+# Features & Requirements Met
 1. Responsive Design
 Desktop: 4-column product grid with a collapsible filter sidebar.
 
@@ -43,7 +43,7 @@ Minimal DOM: Avoided unnecessary nesting to keep the DOM size minimal.
 
 Z-Index Management: Correctly handled the sticky header and card shadows to prevent overlapping issues.
 
-💻 How to Run Locally
+ How to Run Locally
 Clone the repository:
 
 Bash
@@ -66,7 +66,7 @@ Bash
 npm run dev
 View in browser: Open http://localhost:3000
 
-📁 Project Structure
+Project Structure
 /src/app: Contains the main layout and page logic (SSR).
 
 /src/components: Reusable UI components (Navbar, Header, ProductCard, FilterSidebar, Footer).
